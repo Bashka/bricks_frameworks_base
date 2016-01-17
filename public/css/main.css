@@ -1,0 +1,76 @@
+/* Base */
+html{
+    position: relative;
+    min-height: 100%;
+}
+
+body{
+    margin-bottom: 60px;
+}
+
+/* Navbar */
+.navbar-inverse{
+    background: #222;
+    color: #f8f8f8;
+}
+
+.navbar-brand{
+    padding-top: 10px;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+    background-image: none;
+    background-color: #8892bf;
+}
+
+.navbar-inverse .navbar-nav > .active > a:hover{
+    background-image: none;
+    background-color: #8892bf;
+}
+
+/* Body */
+.wrapper{
+    margin: 60px 20px 20px 20px;
+}
+
+.wrapper header{
+    padding: 40px;
+    background: #222;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.wrapper header h1{
+    font-weight: bold;
+}
+
+.wrapper .content{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.wrapper .content h3{
+    color: #8892bf;
+    border-bottom: 1px solid #8892bf;
+}
+
+.wrapper footer{
+    font-size: small;
+    color: #999;
+    position: absolute;
+    bottom: 0;
+    height: 60px;
+}
+
+/* Components */
+.bricks{
+    color: #8892bf;
+}
+
+a{
+    color: #8892bf;
+}
+
+a:hover{
+    color: #8892bf;
+}
