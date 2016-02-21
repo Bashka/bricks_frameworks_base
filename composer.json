@@ -1,6 +1,6 @@
 {
     "name": "bashka/bricks_frameworks_base",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Фреймворк для приложений со статичным контентом",
     "license": "GNU-3.0",
     "authors": [
