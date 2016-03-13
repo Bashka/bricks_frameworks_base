@@ -35,7 +35,7 @@ class App{
           throw new RoutingException('Controller not found');
         }
 
-        $controller = new $controller($locator, $controllerName, $action);
+        $controller = new $controller($locator);
         if(!method_exists($controller, $action)){
           throw new RoutingException('Controller not found');
         }
@@ -53,14 +53,14 @@ class App{
           throw new RoutingException('Controller not found');
         }
 
-        $controller = new $controller($locator, $controllerName, 'index');
+        $controller = new $controller($locator);
         return $controller->indexAction();
       }
     );
 
     $locator['router']->all('~^/~',
       function() use($locator){
-        $controller = new Controller\Index($locator, 'Index', 'index');
+        $controller = new Controller\Index($locator);
         return $controller->indexAction();
       }
     );
@@ -83,6 +83,7 @@ class App{
     }
     catch(\Exception $exception){
       $responseBody = new Template($locator['loader']->path('Bricks\Frameworks\Base\Template\500', 'html'));
+      $responseBody->exception = $exception;
     }
 
     // Возврат ответа.
